@@ -1,0 +1,186 @@
+/* body {
+    background-image: url(images/bg.jpg);
+  } */
+
+  *{
+    margin:0;
+    padding: 0;
+  }
+
+.bgimg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+} 
+.image-container {
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 420px; /* Adjust the vertical position as needed */
+    left: 530px; /* Adjust the horizontal position as needed */
+    color: #fff; /* Text color */
+   
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    width: 550px;
+    font-family: sans-serif;
+  
+  }
+  
+h3 span {
+    font-size: 30px;
+    /* margin-left: 20px; */
+    margin: 0;
+}
+  
+.message {
+    background-color: rgb(108, 230, 214);
+    color: #333;
+    display: block;
+    font-weight: 800;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.1rem;
+    left: 210px;
+    border: none;
+    border-radius: 5px;
+    animation: openclose 5s ease-in-out infinite;
+}
+  
+.word1, .word2, .word3 {
+    font-family: tahoma;
+}
+  
+.searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+
+/* animations */
+@keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+}
